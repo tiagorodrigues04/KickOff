@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-label="Campo principal do Complexo Desportivo do Casaense, com bancada e árvores">
+<defs><linearGradient id="p8" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FA93C"/><stop offset="1" stop-color="#2A6E24"/></linearGradient><pattern id="t8" width="44" height="240" patternUnits="userSpaceOnUse"><rect width="22.0" height="240" fill="#ffffff" fill-opacity=".07"/></pattern></defs>
+<rect width="400" height="240" fill="#9AA5A8"/>
+<rect width="400" height="240" fill="#9AA5A8"/>
+<g fill="#AEB7B9"><ellipse cx="80" cy="18" rx="52" ry="14"/><ellipse cx="210" cy="12" rx="64" ry="13"/><ellipse cx="330" cy="20" rx="48" ry="12"/></g>
+<rect x="40" y="34" width="170" height="22" rx="3" fill="#8E7F6B"/>
+<rect x="45" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="56" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="67" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="78" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="89" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="100" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="111" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="122" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="133" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="144" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="155" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="166" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="177" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="188" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="199" y="37.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="45" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="56" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="67" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="78" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="89" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="100" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="111" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="122" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="133" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="144" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="155" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="166" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="177" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="188" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<rect x="199" y="48.3" width="7" height="4.4" rx="1.5" fill="#C8B59A"/>
+<g><rect x="248.4" y="40" width="3.2" height="9" fill="#4A3B2A"/><circle cx="250" cy="40" r="13" fill="#35663A"/><circle cx="244.15" cy="42.6" r="8.450000000000001" fill="#35663A" fill-opacity=".85"/></g><g><rect x="286.4" y="40" width="3.2" height="9" fill="#4A3B2A"/><circle cx="288" cy="40" r="13" fill="#35663A"/><circle cx="282.15" cy="42.6" r="8.450000000000001" fill="#35663A" fill-opacity=".85"/></g><g><rect x="324.4" y="40" width="3.2" height="9" fill="#4A3B2A"/><circle cx="326" cy="40" r="13" fill="#35663A"/><circle cx="320.15" cy="42.6" r="8.450000000000001" fill="#35663A" fill-opacity=".85"/></g><g><rect x="362.4" y="40" width="3.2" height="9" fill="#4A3B2A"/><circle cx="364" cy="40" r="13" fill="#35663A"/><circle cx="358.15" cy="42.6" r="8.450000000000001" fill="#35663A" fill-opacity=".85"/></g>
+<rect x="16" y="64" width="368" height="162" rx="3" fill="url(#p8)"/>
+<rect x="16" y="64" width="368" height="162" fill="url(#t8)"/>
+<g fill="none" stroke="#ffffff" stroke-opacity=".9" stroke-width="2.5">
+  <rect x="38" y="76" width="324" height="138"/>
+  <line x1="200.0" y1="76" x2="200.0" y2="214"/>
+  <circle cx="200.0" cy="145.0" r="27.6"/>
+  <rect x="38" y="106.36" width="55.080000000000005" height="77.28"/>
+  <rect x="306.92" y="106.36" width="55.080000000000005" height="77.28"/>
+  <rect x="38" y="124.3" width="23.1336" height="41.4"/>
+  <rect x="338.8664" y="124.3" width="23.1336" height="41.4"/>
+  <circle cx="200.0" cy="145.0" r="2.5" fill="#ffffff" stroke="none"/>
+  <path d="M93.08000000000001 122.92 a27.6 27.6 0 0 0 0 44.160000000000004"/>
+  <path d="M306.92 122.92 a27.6 27.6 0 0 1 0 44.160000000000004"/>
+</g>
+<g>
+  <rect x="12" y="12" width="34" height="26" rx="7" fill="#ffffff" fill-opacity=".93"/>
+  <text x="29" y="30" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700"
+        fill="#15541F" text-anchor="middle">AC</text>
+</g>
+</svg>

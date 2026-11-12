@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-label="Relvado sintético da Academia Briosa XXI, com torres de iluminação">
+<defs><linearGradient id="p7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3BA449"/><stop offset="1" stop-color="#1C6B29"/></linearGradient><pattern id="t7" width="36" height="240" patternUnits="userSpaceOnUse"><rect width="18.0" height="240" fill="#ffffff" fill-opacity=".07"/></pattern></defs>
+<rect width="400" height="240" fill="#4C5A52"/>
+<rect width="400" height="240" fill="#4C5A52"/>
+<g>
+  <rect x="68" y="10" width="4" height="26" fill="#5A6670"/>
+  <rect x="57" y="-1" width="26" height="12" rx="2.5" fill="#6E7A85"/>
+  <g fill="#FFF3C4">
+    <circle cx="63" cy="5" r="2.6"/><circle cx="70" cy="5" r="2.6"/><circle cx="77" cy="5" r="2.6"/>
+  </g>
+</g><g>
+  <rect x="198" y="6" width="4" height="30" fill="#5A6670"/>
+  <rect x="187" y="-5" width="26" height="12" rx="2.5" fill="#6E7A85"/>
+  <g fill="#FFF3C4">
+    <circle cx="193" cy="1" r="2.6"/><circle cx="200" cy="1" r="2.6"/><circle cx="207" cy="1" r="2.6"/>
+  </g>
+</g><g>
+  <rect x="328" y="10" width="4" height="26" fill="#5A6670"/>
+  <rect x="317" y="-1" width="26" height="12" rx="2.5" fill="#6E7A85"/>
+  <g fill="#FFF3C4">
+    <circle cx="323" cy="5" r="2.6"/><circle cx="330" cy="5" r="2.6"/><circle cx="337" cy="5" r="2.6"/>
+  </g>
+</g>
+<g fill="#3C4842"><rect x="24" y="40" width="58" height="12" rx="3"/><rect x="170" y="40" width="58" height="12" rx="3"/><rect x="318" y="40" width="58" height="12" rx="3"/></g>
+<rect x="16" y="60" width="368" height="166" rx="3" fill="url(#p7)"/>
+<rect x="16" y="60" width="368" height="166" fill="url(#t7)"/>
+<g fill="none" stroke="#ffffff" stroke-opacity=".9" stroke-width="2.5">
+  <rect x="38" y="72" width="324" height="142"/>
+  <line x1="200.0" y1="72" x2="200.0" y2="214"/>
+  <circle cx="200.0" cy="143.0" r="28.400000000000002"/>
+  <rect x="38" y="103.24" width="55.080000000000005" height="79.52000000000001"/>
+  <rect x="306.92" y="103.24" width="55.080000000000005" height="79.52000000000001"/>
+  <rect x="38" y="121.7" width="23.1336" height="42.6"/>
+  <rect x="338.8664" y="121.7" width="23.1336" height="42.6"/>
+  <circle cx="200.0" cy="143.0" r="2.5" fill="#ffffff" stroke="none"/>
+  <path d="M93.08000000000001 120.28 a28.400000000000002 28.400000000000002 0 0 0 0 45.440000000000005"/>
+  <path d="M306.92 120.28 a28.400000000000002 28.400000000000002 0 0 1 0 45.440000000000005"/>
+</g>
+<g>
+  <rect x="12" y="12" width="34" height="26" rx="7" fill="#ffffff" fill-opacity=".93"/>
+  <text x="29" y="30" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700"
+        fill="#1C6B29" text-anchor="middle">AB</text>
+</g>
+</svg>
