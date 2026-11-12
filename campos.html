@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campos — KickOff</title>
+  <meta name="description" content="Conhece os campos de futsal, futebol de 7 e futebol de 11 do KickOff: piso, dimensões, balneários, iluminação e preços por hora.">
+  <meta name="author" content="Tiago Simões Rodrigues">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <a class="visualmente-escondido" href="#conteudo">Saltar para o conteúdo principal</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__interior">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logótipo KickOff" width="38" height="38">
+        <span>
+          <span class="logo__texto">Kick<span>Off</span></span>
+          <span class="logo__sub">FUTSAL · FUTEBOL</span>
+        </span>
+      </a>
+      <button class="menu-botao" id="menu-botao" type="button"
+              aria-expanded="false" aria-controls="navegacao" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navegacao" id="navegacao" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="campos.html" aria-current="page">Campos</a></li>
+          <li><a href="reservas.html">Reservas</a></li>
+          <li><a href="index.html#torneios">Torneios</a></li>
+          <li><a href="index.html#espacos">Espaços</a></li>
+          <li><a href="index.html#contactos">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <div class="pagina-topo">
+      <div class="container">
+        <p class="migalhas">
+          <a href="index.html">Início</a> &rsaquo; <span aria-current="page">Campos</span>
+        </p>
+        <h1>Campos em Coimbra</h1>
+        <p>Oito campos de futsal, futebol de 7 e futebol de 11, em cinco espaços da cidade.
+           Usa os filtros para veres só a modalidade que te interessa.</p>
+      </div>
+    </div>
+
+    <!-- ===================== LISTA DE CAMPOS ===================== -->
+    <section class="seccao">
+      <div class="container">
+
+        <h2 class="visualmente-escondido">Lista de campos</h2>
+
+        <div class="filtros" role="group" aria-label="Filtrar campos por modalidade">
+          <button class="filtros__botao" id="todos"     type="button" data-filtro="todos"     aria-pressed="true">Todos</button>
+          <button class="filtros__botao" id="futsal"    type="button" data-filtro="futsal"    aria-pressed="false">Futsal</button>
+          <button class="filtros__botao" id="futebol7"  type="button" data-filtro="futebol7"  aria-pressed="false">Futebol de 7</button>
+          <button class="filtros__botao" id="futebol11" type="button" data-filtro="futebol11" aria-pressed="false">Futebol de 11</button>
+        </div>
+
+        <p class="resultado-contagem" id="contagem" role="status">A mostrar 8 campos.</p>
+
+        <div class="grelha grelha--3" id="lista-campos">
+
+          <article class="cartao" data-modalidade="futsal">
+            <div class="cartao__imagem">
+              <img src="img/n10-indoor.svg" alt="Ilustração do N10 · Campo indoor" width="400" height="240" loading="lazy">
+            </div>
+            <div class="cartao__corpo">
+              <div class="cartao__etiquetas">
+                <span class="etiqueta">Futsal</span>
+                <span class="etiqueta etiqueta--fonte">preço publicado</span>
+              </div>
+              <h3>N10 · Campo indoor</h3>
+              <p class="cartao__texto">Campo de futebol de 5 coberto, em relva sintética. Aberto até à 1h00.</p>
+              <ul class="detalhes">
+                <li><span>Piso</span><span>Relva sintética</span></li>
+                <li><span>Espaço</span><span>Coberto</span></li>
+                <li><span>Zona</span><span>Coimbra</span></li>
+                <li><span>Modalidade</span><span>Futebol de 5</span></li>
+              </ul>
+              <p class="cartao__preco">40 € / hora <span class="preco-nota">· 45 € após as 18h e ao fim de semana</span></p>
+              <a class="botao" href="reservas.html?campo=1">Reservar</a>
+            </div>
+          </article>
+
+          <article class="cartao" data-modalidade="futsal">
+            <div class="cartao__imagem">
+              <img src="img/n10-exterior-5.svg" alt="Ilustração do N10 · Campo exterior de 5" width="400" height="240" loading="lazy">
+            </div>
+            <div class="cartao__corpo">
+              <div class="cartao__etiquetas">
+                <span class="etiqueta">Futsal</span>
+                <span class="etiqueta etiqueta--fonte">preço publicado</span>
+              </div>
+              <h3>N10 · Campo exterior de 5</h3>
+              <p class="cartao__texto">Campo exterior de futebol de 5, em relva sintética, com rede de proteção.</p>
+              <ul class="detalhes">
+                <li><span>Piso</span><span>Relva sintética</span></li>
+                <li><span>Espaço</span><span>Exterior</span></li>
+                <li><span>Zona</span><span>Coimbra</span></li>
+                <li><span>Modalidade</span><span>Futebol de 5</span></li>
+              </ul>
+              <p class="cartao__preco">39 € / hora</p>
+              <a class="botao" href="reservas.html?campo=2">Reservar</a>
+            </div>
+          </article>
+
+          <article class="cartao" data-modalidade="futsal">
+            <div class="cartao__imagem">
+              <img src="img/santa-clara-pavilhao.svg" alt="Ilustração do Pavilhão do CF Santa Clara" width="400" height="240" loading="lazy">
+            </div>
+            <div class="cartao__corpo">
+              <div class="cartao__etiquetas">
+                <span class="etiqueta">Futsal</span>
+                <span class="etiqueta etiqueta--aviso">preço indicativo</span>
+              </div>
+              <h3>Pavilhão do CF Santa Clara</h3>
+              <p class="cartao__texto">Pavilhão gimnodesportivo com piso sintético e bancada.</p>
+              <ul class="detalhes">
+                <li><span>Piso</span><span>Sintético</span></li>
+                <li><span>Espaço</span><span>Coberto</span></li>
+                <li><span>Zona</span><span>Santa Clara</span></li>
+                <li><span>Modalidade</span><span>Futsal</span></li>
+              </ul>
+              <p class="cartao__preco">30 – 50 € / hora</p>
+              <a class="botao" href="reservas.html?campo=3">Reservar</a>
+            </div>
+          </article>
+
+          <article class="cartao" data-modalidade="futebol7">
+            <div class="cartao__imagem">
+              <img src="img/n10-exterior-7.svg" alt="Ilustração do N10 · Campo exterior de 7" width="400" height="240" loading="lazy">
+            </div>
+            <div class="cartao__corpo">
+              <div class="cartao__etiquetas">
+                <span class="etiqueta">Futebol de 7</span>
+                <span class="etiqueta etiqueta--fonte">preço publicado</span>
+              </div>
+              <h3>N10 · Campo exterior de 7</h3>
+              <p class="cartao__texto">Campo de futebol de 7 em relva sintética, com iluminação para jogos à noite.</p>
+              <ul class="detalhes">
+                <li><span>Piso</span><span>Relva sintética</span></li>
+                <li><span>Espaço</span><span>Exterior</span></li>
+                <li><span>Zona</span><span>Coimbra</span></li>
+                <li><span>Modalidade</span><span>Futebol de 7</span></li>
+              </ul>
+              <p class="cartao__preco">56 € / hora</p>
+              <a class="botao" href="reservas.html?campo=4">Reservar</a>
+            </div>
+          </article>
+
+          <article class="cartao" data-modalidade="futebol7">
+            <div class="cartao__imagem">
+              <img src="img/euc-sintetico.svg" alt="Ilustração do Estádio Universitário · Relvado sintético" width="400" height="240" loading="lazy">
+            </div>
+            <div class="cartao__corpo">
+              <div class="cartao__etiquetas">
+                <span class="etiqueta">Futebol de 7</span>
+                <span class="etiqueta etiqueta--aviso">preço indicativo</span>
+              </div>
+              <h3>Estádio Universitário · Relvado sintético</h3>
+              <p class="cartao__texto">Relvado sintético do complexo desportivo da Universidade de Coimbra.</p>
+              <ul class="detalhes">
+                <li><span>Piso</span><span>Relva sintética</span></li>
+                <li><span>Espaço</span><span>Exterior</span></li>
+                <li><span>Zona</span><span>Universidade</span></li>
+                <li><span>Modalidade</span><span>Futebol de 7</span></li>
+              </ul>
+              <p class="cartao__preco">40 – 70 € / hora</p>
+              <a class="botao" href="reservas.html?campo=5">Reservar</a>
+            </div>
+          </article>
+
+          <article class="cartao" data-modalidade="futebol11">
+            <div class="cartao__imagem">
+              <img src="img/euc-natural.svg" alt="Ilustração do Estádio Universitário · Relvado natural" width="400" height="240" loading="lazy">
+            </div>
+            <div class="cartao__corpo">
+              <div class="cartao__etiquetas">
+                <span class="etiqueta">Futebol de 11</span>
+                <span class="etiqueta etiqueta--aviso">preço indicativo</span>
+              </div>
+              <h3>Estádio Universitário · Relvado natural</h3>
+              <p class="cartao__texto">Relvado natural de dimensões oficiais, rodeado pela pista de atletismo.</p>
+              <ul class="detalhes">
+                <li><span>Piso</span><span>Relva natural</span></li>
+                <li><span>Espaço</span><span>Exterior</span></li>
+                <li><span>Zona</span><span>Universidade</span></li>
+                <li><span>Modalidade</span><span>Futebol de 11</span></li>
+              </ul>
+              <p class="cartao__preco">60 – 80 € / hora</p>
+              <a class="botao" href="reservas.html?campo=6">Reservar</a>
+            </div>
+          </article>
+
+          <article class="cartao" data-modalidade="futebol11">
+            <div class="cartao__imagem">
+              <img src="img/briosa-sintetico.svg" alt="Ilustração do Academia Briosa XXI · Relvado sintético" width="400" height="240" loading="lazy">
+            </div>
+            <div class="cartao__corpo">
+              <div class="cartao__etiquetas">
+                <span class="etiqueta">Futebol de 11</span>
+                <span class="etiqueta etiqueta--aviso">preço indicativo</span>
+              </div>
+              <h3>Academia Briosa XXI · Relvado sintético</h3>
+              <p class="cartao__texto">Relvado sintético da academia da Associação Académica de Coimbra.</p>
+              <ul class="detalhes">
+                <li><span>Piso</span><span>Relva sintética</span></li>
+                <li><span>Espaço</span><span>Exterior</span></li>
+                <li><span>Zona</span><span>Académica / OAF</span></li>
+                <li><span>Modalidade</span><span>Futebol de 11</span></li>
+              </ul>
+              <p class="cartao__preco">55 – 75 € / hora</p>
+              <a class="botao" href="reservas.html?campo=7">Reservar</a>
+            </div>
+          </article>
+
+          <article class="cartao" data-modalidade="futebol11">
+            <div class="cartao__imagem">
+              <img src="img/casaense-principal.svg" alt="Ilustração do Casaense · Campo principal" width="400" height="240" loading="lazy">
+            </div>
+            <div class="cartao__corpo">
+              <div class="cartao__etiquetas">
+                <span class="etiqueta">Futebol de 11</span>
+                <span class="etiqueta etiqueta--aviso">preço indicativo</span>
+              </div>
+              <h3>Casaense · Campo principal</h3>
+              <p class="cartao__texto">Campo principal do Complexo Desportivo do Casaense, com bancada.</p>
+              <ul class="detalhes">
+                <li><span>Piso</span><span>Relvado</span></li>
+                <li><span>Espaço</span><span>Exterior</span></li>
+                <li><span>Zona</span><span>Casaense</span></li>
+                <li><span>Modalidade</span><span>Futebol de 11</span></li>
+              </ul>
+              <p class="cartao__preco">45 – 60 € / hora</p>
+              <a class="botao" href="reservas.html?campo=8">Reservar</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="aviso" id="sem-resultados" hidden>
+          Não há campos nesta modalidade. Experimenta outro filtro.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ===================== PREÇOS ===================== -->
+    <section class="seccao seccao--alt" id="precos">
+      <div class="container">
+        <div class="seccao__cabecalho">
+          <h2>Tabela de preços</h2>
+          <p class="cartao__texto">Valores por hora, por espaço.</p>
+        </div>
+
+        <div class="tabela-envolve">
+          <table>
+            <caption>Espaços, modalidades e preço por hora de aluguer</caption>
+            <thead>
+              <tr>
+                <th scope="col">Espaço</th>
+                <th scope="col">Modalidades</th>
+                <th scope="col">Piso</th>
+                <th scope="col">Preço / hora</th>
+                <th scope="col">Origem do preço</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">N10</th>
+                <td>Futebol de 5 e de 7</td>
+                <td>Relva sintética</td>
+                <td class="destaque">39 € – 56 €</td>
+                <td>Oficial</td>
+              </tr>
+              <tr>
+                <th scope="row">Pavilhão do CF Santa Clara</th>
+                <td>Futsal</td>
+                <td>Sintético coberto</td>
+                <td class="destaque">30 € – 50 €</td>
+                <td>Indicativo</td>
+              </tr>
+              <tr>
+                <th scope="row">Estádio Universitário de Coimbra</th>
+                <td>Futebol de 7 e de 11</td>
+                <td>Sintético e natural</td>
+                <td class="destaque">40 € – 80 €</td>
+                <td>Indicativo</td>
+              </tr>
+              <tr>
+                <th scope="row">Academia Briosa XXI</th>
+                <td>Futebol de 11</td>
+                <td>Relva sintética</td>
+                <td class="destaque">55 € – 75 €</td>
+                <td>Indicativo</td>
+              </tr>
+              <tr>
+                <th scope="row">A. R. Casaense</th>
+                <td>Futebol de 11</td>
+                <td>Relvado</td>
+                <td class="destaque">45 € – 60 €</td>
+                <td>Indicativo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="aviso" style="margin-top:18px">
+          <span aria-hidden="true">ℹ</span>
+          <span>A reserva é feita aqui no KickOff, em poucos passos. Os preços do N10 são os
+          praticados pelo espaço; os restantes são indicativos e servem para este projeto académico.</span>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape__grelha">
+        <div>
+          <span class="logo__texto">Kick<span>Off</span></span>
+          <p style="margin-top:10px">Os campos de futsal e futebol de Coimbra num só sítio. Compara preços, vê a disponibilidade e reserva online.</p>
+        </div>
+        <div>
+          <h3>Contactos</h3>
+          <ul class="rodape__lista">
+            <li>KickOff · Coimbra</li>
+            <li><a href="tel:+351239000000">239 000 000</a></li>
+            <li><a href="mailto:geral@kickoff.pt">geral@kickoff.pt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ligações</h3>
+          <ul class="rodape__lista">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="campos.html">Campos</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="index.html#torneios">Torneios</a></li>
+          <li><a href="index.html#espacos">Espaços</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Espaços</h3>
+          <ul class="rodape__lista">
+            <li>N10</li>
+            <li>Pavilhão do CF Santa Clara</li>
+            <li>Estádio Universitário de Coimbra</li>
+            <li>Academia Briosa XXI</li>
+            <li>A. R. Casaense</li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape__nota">
+        <strong>Projeto académico.</strong> Os espaços desportivos mencionados existem, mas o KickOff
+        não tem qualquer ligação a eles. A disponibilidade e as reservas são simuladas e,
+        tirando as do N10, as tabelas de preços são indicativas. Confirma sempre os valores
+        junto de cada espaço.
+      </p>
+      <p class="rodape__fim">© 2026 KickOff · Projeto académico de Desenvolvimento para a Web · ISCAC</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

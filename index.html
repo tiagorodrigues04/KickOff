@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KickOff — Reserva campos de futsal e futebol em Coimbra</title>
+  <meta name="description" content="Plataforma que junta os campos de futsal, futebol de 7 e futebol de 11 de vários espaços de Coimbra. Compara, consulta a disponibilidade e reserva online.">
+  <meta name="author" content="Tiago Simões Rodrigues">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <a class="visualmente-escondido" href="#conteudo">Saltar para o conteúdo principal</a>
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="cabecalho">
+    <div class="container cabecalho__interior">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logótipo KickOff" width="38" height="38">
+        <span>
+          <span class="logo__texto">Kick<span>Off</span></span>
+          <span class="logo__sub">FUTSAL · FUTEBOL</span>
+        </span>
+      </a>
+
+      <button class="menu-botao" id="menu-botao" type="button"
+              aria-expanded="false" aria-controls="navegacao" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="navegacao" id="navegacao" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="campos.html">Campos</a></li>
+          <li><a href="reservas.html">Reservas</a></li>
+          <li><a href="#torneios">Torneios</a></li>
+          <li><a href="#espacos">Espaços</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===================== DESTAQUE ===================== -->
+    <section class="destaque">
+      <img class="destaque__fundo" src="img/hero.svg" alt="" aria-hidden="true">
+      <div class="container destaque__conteudo">
+        <h1>Reserva, joga, repete.</h1>
+        <p>Num só sítio, os campos de futsal, futebol de 7 e futebol de 11
+           dos principais espaços de Coimbra. Compara preços e reserva online.</p>
+        <a class="botao" href="reservas.html">Reservar campo</a>
+      </div>
+    </section>
+
+    <!-- ===================== MODALIDADES ===================== -->
+    <section class="seccao" id="modalidades">
+      <div class="container">
+        <div class="seccao__cabecalho">
+          <h2>Modalidades</h2>
+          <a href="campos.html">Ver todos os campos &rarr;</a>
+        </div>
+
+        <div class="grelha grelha--3">
+
+          <article class="cartao">
+            <div class="cartao__imagem">
+              <img src="img/n10-indoor.svg" alt="Campo de futsal coberto, em relva sintética" width="400" height="240" loading="lazy">
+            </div>
+            <div class="cartao__corpo">
+              <h3>Futsal</h3>
+              <p class="cartao__texto">Pavilhões cobertos e campos exteriores de futebol de 5, em três espaços da cidade.</p>
+              <p class="cartao__preco">desde 30 € / hora</p>
+              <a class="botao botao--secundario" href="campos.html#futsal">Ver campos</a>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <div class="cartao__imagem">
+              <img src="img/n10-exterior-7.svg" alt="Campo de futebol de 7 ao fim da tarde, com holofotes" width="400" height="240" loading="lazy">
+            </div>
+            <div class="cartao__corpo">
+              <h3>Futebol de 7</h3>
+              <p class="cartao__texto">Relvados sintéticos com iluminação, para jogos ao fim da tarde e à noite.</p>
+              <p class="cartao__preco">desde 40 € / hora</p>
+              <a class="botao botao--secundario" href="campos.html#futebol7">Ver campos</a>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <div class="cartao__imagem">
+              <img src="img/euc-natural.svg" alt="Relvado natural de futebol de 11, com pista de atletismo" width="400" height="240" loading="lazy">
+            </div>
+            <div class="cartao__corpo">
+              <h3>Futebol de 11</h3>
+              <p class="cartao__texto">Relvados de dimensões oficiais, naturais e sintéticos, com bancadas.</p>
+              <p class="cartao__preco">desde 45 € / hora</p>
+              <a class="botao botao--secundario" href="campos.html#futebol11">Ver campos</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TORNEIOS ===================== -->
+    <section class="seccao seccao--alt" id="torneios">
+      <div class="container">
+        <div class="seccao__cabecalho">
+          <h2>Próximos torneios</h2>
+          <p class="cartao__texto">Torneios organizados pelo KickOff. Inscrições pelo 239 000 000.</p>
+        </div>
+
+        <div class="grelha grelha--3">
+
+          <article class="cartao">
+            <div class="cartao__corpo torneio">
+              <div class="torneio__topo">
+                <h3>Torneio de Outono</h3>
+                <span class="etiqueta">2 vagas</span>
+              </div>
+              <p class="cartao__texto">Futsal · 18 de outubro · 8 equipas · local a anunciar</p>
+              <ul class="detalhes">
+                <li><span>Formato</span><span>Grupos + eliminatórias</span></li>
+                <li><span>Inscrição</span><span>80 € por equipa</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <div class="cartao__corpo torneio">
+              <div class="torneio__topo">
+                <h3>Liga Universitária</h3>
+                <span class="etiqueta">4 vagas</span>
+              </div>
+              <p class="cartao__texto">Futebol de 7 · 25 de outubro · 12 equipas · local a anunciar</p>
+              <ul class="detalhes">
+                <li><span>Formato</span><span>Campeonato</span></li>
+                <li><span>Inscrição</span><span>120 € por equipa</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <div class="cartao__corpo torneio">
+              <div class="torneio__topo">
+                <h3>Taça de Natal</h3>
+                <span class="etiqueta etiqueta--aviso">Inscrições abertas</span>
+              </div>
+              <p class="cartao__texto">Futebol de 11 · 13 de dezembro · 8 equipas · local a anunciar</p>
+              <ul class="detalhes">
+                <li><span>Formato</span><span>Eliminatórias</span></li>
+                <li><span>Inscrição</span><span>200 € por equipa</span></li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ESPAÇOS ===================== -->
+    <section class="seccao" id="espacos">
+      <div class="container">
+        <div class="seccao__cabecalho">
+          <h2>Espaços em Coimbra</h2>
+          <a href="campos.html">Ver todos os campos &rarr;</a>
+        </div>
+
+        <div class="horario-caixa">
+          <div>
+            <ul class="detalhes detalhes--espacos">
+              <li><span>N10</span><span>Futebol de 5 e de 7 · sintético</span></li>
+              <li><span>Pavilhão do CF Santa Clara</span><span>Futsal · coberto</span></li>
+              <li><span>Estádio Universitário de Coimbra</span><span>Futebol de 7 e de 11</span></li>
+              <li><span>Academia Briosa XXI</span><span>Futebol de 11 · sintético</span></li>
+              <li><span>A. R. Casaense</span><span>Futebol de 11 · relvado</span></li>
+            </ul>
+            <p class="cartao__texto" style="margin-top:14px">
+              Cada espaço tem o seu horário. A generalidade abre das 9h00 à meia-noite
+              durante a semana e até às 22h00 ao fim de semana.
+            </p>
+          </div>
+          <div class="mapa">
+            <img src="img/mapa.svg" alt="Mapa com a localização dos espaços parceiros em Coimbra" width="480" height="260" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTOS ===================== -->
+    <section class="seccao seccao--alt" id="contactos">
+      <div class="container">
+        <div class="seccao__cabecalho"><h2>Contactos</h2></div>
+
+        <div class="contactos__grelha">
+
+          <div class="contactos__info">
+            <div>
+              <h3>Onde estamos</h3>
+              <p>KickOff — plataforma de reservas<br>Coimbra</p>
+            </div>
+            <div>
+              <h3>Telefone</h3>
+              <p><a href="tel:+351239000000">239 000 000</a></p>
+            </div>
+            <div>
+              <h3>E-mail</h3>
+              <p><a href="mailto:geral@kickoff.pt">geral@kickoff.pt</a></p>
+            </div>
+            <div>
+              <h3>Espaços parceiros</h3>
+              <p>Queres o teu campo no KickOff? Escreve-nos e juntamos o teu espaço à lista.</p>
+            </div>
+          </div>
+
+          <form class="cartao" id="form-contacto" novalidate>
+            <div class="cartao__corpo">
+              <h3>Envia-nos uma mensagem</h3>
+
+              <div class="aviso aviso--sucesso" id="contacto-sucesso" hidden role="status">
+                <strong>Mensagem enviada.</strong> Respondemos no prazo de 24 horas.
+              </div>
+
+              <div class="campo">
+                <label for="contacto-nome">Nome *</label>
+                <input type="text" id="contacto-nome" name="nome" placeholder="Nome completo" required>
+                <span class="campo__erro" data-erro="contacto-nome"></span>
+              </div>
+
+              <div class="campo">
+                <label for="contacto-email">E-mail *</label>
+                <input type="email" id="contacto-email" name="email" placeholder="exemplo@email.pt" required>
+                <span class="campo__erro" data-erro="contacto-email"></span>
+              </div>
+
+              <div class="campo">
+                <label for="contacto-assunto">Assunto</label>
+                <select id="contacto-assunto" name="assunto">
+                  <option value="reservas">Reservas</option>
+                  <option value="torneios">Torneios</option>
+                  <option value="precos">Preços e sócios</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+
+              <div class="campo">
+                <label for="contacto-mensagem">Mensagem *</label>
+                <textarea id="contacto-mensagem" name="mensagem" placeholder="Escreve aqui a tua mensagem" required></textarea>
+                <span class="campo__erro" data-erro="contacto-mensagem"></span>
+              </div>
+
+              <button class="botao botao--largo" type="submit">Enviar mensagem</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape__grelha">
+        <div>
+          <span class="logo__texto">Kick<span>Off</span></span>
+          <p style="margin-top:10px">Os campos de futsal e futebol de Coimbra num só sítio. Compara preços, vê a disponibilidade e reserva online.</p>
+        </div>
+        <div>
+          <h3>Contactos</h3>
+          <ul class="rodape__lista">
+            <li>KickOff · Coimbra</li>
+            <li><a href="tel:+351239000000">239 000 000</a></li>
+            <li><a href="mailto:geral@kickoff.pt">geral@kickoff.pt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ligações</h3>
+          <ul class="rodape__lista">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="campos.html">Campos</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="#torneios">Torneios</a></li>
+          <li><a href="#espacos">Espaços</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Espaços</h3>
+          <ul class="rodape__lista">
+            <li>N10</li>
+            <li>Pavilhão do CF Santa Clara</li>
+            <li>Estádio Universitário de Coimbra</li>
+            <li>Academia Briosa XXI</li>
+            <li>A. R. Casaense</li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape__nota">
+        <strong>Projeto académico.</strong> Os espaços desportivos mencionados existem, mas o KickOff
+        não tem qualquer ligação a eles. A disponibilidade e as reservas são simuladas e,
+        tirando as do N10, as tabelas de preços são indicativas. Confirma sempre os valores
+        junto de cada espaço.
+      </p>
+      <p class="rodape__fim">© 2026 KickOff · Projeto académico de Desenvolvimento para a Web · ISCAC</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

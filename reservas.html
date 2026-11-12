@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas — KickOff</title>
+  <meta name="description" content="Reserva online um campo de futsal, futebol de 7 ou futebol de 11 em Coimbra. Escolhe o espaço, a data e o horário e vê logo quanto paga cada jogador.">
+  <meta name="author" content="Tiago Simões Rodrigues">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <a class="visualmente-escondido" href="#conteudo">Saltar para o conteúdo principal</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__interior">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logótipo KickOff" width="38" height="38">
+        <span>
+          <span class="logo__texto">Kick<span>Off</span></span>
+          <span class="logo__sub">FUTSAL · FUTEBOL</span>
+        </span>
+      </a>
+      <button class="menu-botao" id="menu-botao" type="button"
+              aria-expanded="false" aria-controls="navegacao" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navegacao" id="navegacao" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="campos.html">Campos</a></li>
+          <li><a href="reservas.html" aria-current="page">Reservas</a></li>
+          <li><a href="index.html#torneios">Torneios</a></li>
+          <li><a href="index.html#espacos">Espaços</a></li>
+          <li><a href="index.html#contactos">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <div class="pagina-topo">
+      <div class="container">
+        <p class="migalhas">
+          <a href="index.html">Início</a> &rsaquo; <span aria-current="page">Reservas</span>
+        </p>
+        <h1>Reservar campo</h1>
+        <p>Escolhe a modalidade, o campo e o horário e preenche os teus dados.
+           O preço é calculado automaticamente à medida que fazes as escolhas.</p>
+      </div>
+    </div>
+
+    <section class="seccao">
+      <div class="container">
+
+        <div class="aviso aviso--sucesso" id="reserva-sucesso" hidden role="status">
+          <span aria-hidden="true">✓</span>
+          <span><strong>Reserva confirmada.</strong> Enviámos os detalhes por e-mail.
+          Apresenta o código na receção no dia do jogo.</span>
+        </div>
+
+        <form id="form-reserva" novalidate>
+          <div class="reserva-layout">
+
+            <!-- ---------- coluna do formulário ---------- -->
+            <div>
+
+              <p class="aviso">
+                <span aria-hidden="true">ℹ</span>
+                <span>Os horários a cinzento já estão reservados. Escolhe um horário livre para continuar.</span>
+              </p>
+
+              <fieldset>
+                <legend>1. Modalidade e campo</legend>
+                <div class="form-linha">
+                  <div class="campo">
+                    <label for="modalidade">Modalidade *</label>
+                    <select id="modalidade" name="modalidade" required>
+                      <option value="futsal">Futsal</option>
+                      <option value="futebol7">Futebol de 7</option>
+                      <option value="futebol11">Futebol de 11</option>
+                    </select>
+                  </div>
+                  <div class="campo">
+                    <label for="campo">Campo *</label>
+                    <select id="campo" name="campo" required></select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>2. Data e horário</legend>
+
+                <div class="campo">
+                  <label for="data">Data *</label>
+                  <input type="date" id="data" name="data" required>
+                  <span class="campo__erro" data-erro="data"></span>
+                </div>
+
+                <div class="campo">
+                  <span class="campo__ajuda" id="rotulo-horarios">Horário *</span>
+                  <div class="horarios" id="horarios" role="group" aria-labelledby="rotulo-horarios"></div>
+                  <span class="campo__erro" data-erro="horario"></span>
+                  <div class="legenda">
+                    <span><i class="livre"></i> Livre</span>
+                    <span><i class="ocupado"></i> Ocupado</span>
+                    <span><i class="escolhido"></i> Selecionado</span>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>3. Os teus dados</legend>
+
+                <div class="form-linha">
+                  <div class="campo">
+                    <label for="nome">Nome *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                    <span class="campo__erro" data-erro="nome"></span>
+                  </div>
+                  <div class="campo">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.pt" required>
+                    <span class="campo__erro" data-erro="email"></span>
+                  </div>
+                </div>
+
+                <div class="form-linha">
+                  <div class="campo">
+                    <label for="telemovel">Telemóvel *</label>
+                    <input type="tel" id="telemovel" name="telemovel" placeholder="912 345 678"
+                           inputmode="numeric" required>
+                    <span class="campo__erro" data-erro="telemovel"></span>
+                  </div>
+                  <div class="campo">
+                    <label for="jogadores">Nº de jogadores *</label>
+                    <input type="number" id="jogadores" name="jogadores" value="10" min="2" max="30" required>
+                    <span class="campo__erro" data-erro="jogadores"></span>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="cartao">
+                <div class="cartao__corpo">
+                  <h3>Informações úteis</h3>
+                  <ul class="detalhes">
+                    <li><span>Cancelamento</span><span>Gratuito até 24h antes</span></li>
+                    <li><span>Pagamento</span><span>No local, em cada espaço</span></li>
+                    <li><span>Confirmação</span><span>Por e-mail</span></li>
+                    <li><span>Duração</span><span>1 hora por reserva</span></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- ---------- coluna do resumo ---------- -->
+            <aside class="reserva-layout__lado" aria-label="Resumo da reserva">
+              <div class="resumo">
+                <h2>Resumo da reserva</h2>
+                <ul class="detalhes">
+                  <li><span>Modalidade</span><span id="r-modalidade">Futsal</span></li>
+                  <li><span>Espaço</span><span id="r-espaco">N10</span></li>
+                  <li><span>Campo</span><span id="r-campo">N10 · Campo indoor</span></li>
+                  <li><span>Data</span><span id="r-data">—</span></li>
+                  <li><span>Horário</span><span id="r-horario">—</span></li>
+                  <li><span>Preço por hora</span><span id="r-preco">40,00 €</span></li>
+                </ul>
+                <p class="resumo__total">
+                  <span>Total</span>
+                  <span id="r-total">40,00 €</span>
+                </p>
+                <p class="resumo__jogador" id="r-jogador">4,00 € por jogador (10 jogadores)</p>
+                <p class="resumo__fonte" id="nota-preco" hidden>* Preço indicativo, para efeitos deste projeto.</p>
+                <button class="botao botao--largo" type="submit">Confirmar reserva</button>
+              </div>
+            </aside>
+
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape__grelha">
+        <div>
+          <span class="logo__texto">Kick<span>Off</span></span>
+          <p style="margin-top:10px">Os campos de futsal e futebol de Coimbra num só sítio. Compara preços, vê a disponibilidade e reserva online.</p>
+        </div>
+        <div>
+          <h3>Contactos</h3>
+          <ul class="rodape__lista">
+            <li>KickOff · Coimbra</li>
+            <li><a href="tel:+351239000000">239 000 000</a></li>
+            <li><a href="mailto:geral@kickoff.pt">geral@kickoff.pt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ligações</h3>
+          <ul class="rodape__lista">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="campos.html">Campos</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="index.html#torneios">Torneios</a></li>
+          <li><a href="index.html#espacos">Espaços</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Espaços</h3>
+          <ul class="rodape__lista">
+            <li>N10</li>
+            <li>Pavilhão do CF Santa Clara</li>
+            <li>Estádio Universitário de Coimbra</li>
+            <li>Academia Briosa XXI</li>
+            <li>A. R. Casaense</li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape__nota">
+        <strong>Projeto académico.</strong> Os espaços desportivos mencionados existem, mas o KickOff
+        não tem qualquer ligação a eles. A disponibilidade e as reservas são simuladas e,
+        tirando as do N10, as tabelas de preços são indicativas. Confirma sempre os valores
+        junto de cada espaço.
+      </p>
+      <p class="rodape__fim">© 2026 KickOff · Projeto académico de Desenvolvimento para a Web · ISCAC</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
